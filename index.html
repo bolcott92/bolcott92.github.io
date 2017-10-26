@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Benjamin Carter Olcott - homepage</title>
+
+<meta name="Description" content="Website of Benjamin Carter Olcott, novelist, poet, writer, filmmaker">
+<meta name="keywords" content="writer, poet, poetry, novel, fiction, literature, criticism, essay, poetry, ben olcott, ben carter olcott, benjamin carter olcott">
+<meta name="author" content="Benjamin Carter Olcott">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="olcottStyle.css">
+
+<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<header>&nbsp;</header>
+	
+	<div id="content">	
+			
+			<div id="Ben" class="nav">
+				<span class="dropC">B</span>en
+			</div>
+			<div id="bp" class="panel hidden">
+				Ben Carter Olcott is a writer.
+			</div>
+			<div id="Carter" class="nav">
+				<span class="dropC">C</span>arter
+			</div>
+			<div id="cp" class="panel hidden">
+				<section class="category"><a class="link" href="fiction.html">Fiction</a></section>
+				<section class="category"><a class="link" href="poetry.html">Poetry</a></section>
+				<section class="category"><a class="link" href="nonfiction.html">Non-Fiction</a></section>
+				<section class="category"><a class="link" href="web design.html">Web Design</a></section>
+			</div>
+			<div id="Olcott" class="nav">
+				<span class="dropC">O</span>lcott
+			</div>
+			<div id="op" class="panel hidden">
+				Send me an email at <a class="link highlight" href="mailto:bencarterolcott@gmail.com">bencarterolcott@gmail.com</a>
+			</div>		
+
+	</div>
+	
+	<footer>&nbsp;</footer>
+	
+	
+</div>
+
+</body>
+
+<script>
+	
+	
+$(document).ready(function(){
+				  
+				  
+	$('.nav').click(function(){
+		$('.panel').addClass('hidden');
+		$(this).next('.panel').removeClass('hidden');
+		$('#Ben, #Carter, #Olcott').removeClass('highlight');
+		$(this).addClass('highlight');
+	});
+	
+	$('.prose').click(function(){
+		$(this).find('p').toggle('hidden');
+	});
+	
+	$('.poetry').click(function(){
+		$(this).find('p').toggle('hidden');
+	});
+
+});
+		
+	
+	
+	
+</script>
+
+
+</html>

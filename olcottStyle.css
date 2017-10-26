@@ -1,0 +1,109 @@
+@charset "utf-8";
+	
+	@keyframes animatedBackground {
+	0% { color: green; }
+	20% { color: blue; }
+	40% { color: black; }	
+	60% { color: yellow; }
+	80% { color: green; }
+	100% { color: mediumpurple; }
+}
+
+	body, p, header, footer {
+		font-family: 'Averia Serif Libre', cursive;
+	}
+	
+	#op a {
+	font-family: 'Averia Serif Libre', cursive;
+	
+}
+
+	h1 {
+		font-family: 'Bungee Shade', cursive;
+		cursor: pointer;
+		font-size: 2.0rem;
+	}
+	
+	#container {
+		max-width: 100%;
+		
+	}
+	
+	#content {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+
+	.panel {
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+		color: black;
+		font-family: 'Averia Serif Libre', cursive;
+		
+	}
+
+	
+	.link {
+		text-decoration: none;
+		color: black;
+	}
+
+#Ben, #Carter, #Olcott {
+	font-family: 'Bungee Shade', cursive;
+	cursor: pointer;
+	font-size: 2.25rem;
+}
+
+.hidden {
+	display:none;
+}
+
+.highlight {
+	animation: animatedBackground 20s linear infinite;
+	
+}
+.dropC {
+	font-size: 5.0rem;
+}
+
+header, footer {
+	height: 50px;
+}
+
+.category {
+	font-family: 'Bungee Shade', cursive;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.category a:hover {
+	animation: animatedBackground 20s linear infinite;
+	cursor: pointer;
+}
+
+
+#homeNav {
+	width: 100%;
+	text-align: center;
+}
+
+#homeNav a {
+	font-family: 'Bungee Shade', cursive;
+}
+
+.back {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.prose {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.verse {
+	list-style: none;
+}
+

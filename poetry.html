@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Benjamin Carter Olcott - poetry</title>
+
+<meta name="Description" content="Website of Benjamin Carter Olcott, novelist, poet, writer, filmmaker">
+<meta name="keywords" content="writer, poet, poetry, novel, fiction, literature, criticism, essay, poetry, ben olcott, ben carter olcott, benjamin carter olcott">
+<meta name="author" content="Benjamin Carter Olcott">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="olcottStyle.css">
+
+<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<header><div id="homeNav"><a class="back link" href="homepage.html">Home</a></div></header>
+	
+	<div id="content">	
+		<section id="oneExcerpt" class="poetry">
+		
+			<h1 class="highlight">New Poem</h1>
+				
+				<p class="verse hidden">
+					One must quit one's job. One <em>must</em>.</br>
+					One must quit one's job. One <em>must</em>.</br>
+					One must quit one's job. One <em>must</em>.</br>
+					One must quit one's job. One <em>must</em>.</br>
+				</p>
+					
+		</section>
+		
+		<section id="other" class="poetry">
+		
+			<h1 class="highlight">Other Poem</h1>
+				
+				<p class="verse hidden">
+					One must quit one's job. One <em>must</em>.</br>
+					One must quit one's job. One <em>must</em>.</br>
+					One must quit one's job. One <em>must</em>.</br>
+					One must quit one's job. One <em>must</em>.</br>
+				</p>
+					
+		</section>		
+
+	</div>
+	
+	<footer>&nbsp;</footer>
+	
+	
+</div>
+
+</body>
+
+<script>
+	
+	
+$(document).ready(function(){
+				  
+				  
+	$('.nav').click(function(){
+		$('.panel').addClass('hidden');
+		$(this).next('.panel').removeClass('hidden');
+		$('#Ben, #Carter, #Olcott').removeClass('highlight');
+		$(this).addClass('highlight');
+	});
+		
+	/*
+	$('body').animate({backgroundColor: '#400101'})
+	*/
+	
+	$('.prose').click(function(){
+		$(this).find('p').toggle('hidden');
+	});
+	
+	$('.poetry').click(function(){
+		$(this).find('p').toggle('hidden');
+	});
+
+});
+		
+	
+	
+	
+</script>
+
+
+</html>
