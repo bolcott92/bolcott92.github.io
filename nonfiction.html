@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Benjamin Carter Olcott - non-fiction</title>
+<title>Benjamin Carter Olcott - Criticism</title>
 
 <meta name="Description" content="Website of Benjamin Carter Olcott, novelist, poet, writer, filmmaker">
 <meta name="keywords" content="writer, poet, poetry, novel, fiction, literature, criticism, essay, poetry, ben olcott, ben carter olcott, benjamin carter olcott">
@@ -14,36 +14,41 @@
 <link rel="stylesheet" href="olcottStyle.css">
 
 <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
+<section class="rain"></section>
+
 <body>
 
 <div id="container">
 
-	<header><div id="homeNav"><a class="back link" href="homepage.html">Home</a></div></header>
+		<header><div id="homeNav"><a class="back link" href="index.html">⬅</a></div><button id="pause"></button></header>
 	
 	<div id="content">	
 		<section id="oneExcerpt" class="prose">
 		
 			<h1 class="highlight">New Essay</h1>
-				
-				<p class="hidden">
+				<div class="textP">
+				<p>
 					One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. 
 				</p>
+			</div>
 					
 		</section>
 		
 		<section id="other" class="prose">
 		
 			<h1 class="highlight">Other essay</h1>
-				
-				<p class="hidden">
+			<div class="textP">	
+				<p>
 					One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. One must quit one's job. One <em>must</em>. 
 				</p>
+			</div>
 					
 		</section>		
 
@@ -56,34 +61,7 @@
 
 </body>
 
-<script>
-	
-	
-$(document).ready(function(){
-				  
-				  
-	$('.nav').click(function(){
-		$('.panel').addClass('hidden');
-		$(this).next('.panel').removeClass('hidden');
-		$('#Ben, #Carter, #Olcott').removeClass('highlight');
-		$(this).addClass('highlight');
-	});
-		
-	$('.prose').click(function(){
-		$(this).find('p').toggle('hidden');
-	});
-	
-	$('.poetry').click(function(){
-		$(this).find('p').toggle('hidden');
-	});
-	
-	
-});
-		
-	
-	
-	
-</script>
+<script src="olcottJS.js"></script>
 
 
 </html>

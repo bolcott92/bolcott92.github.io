@@ -1,71 +1,113 @@
 @charset "utf-8";
-	
-	@keyframes animatedBackground {
-	0% { color: green; }
-	20% { color: blue; }
-	40% { color: black; }	
-	60% { color: yellow; }
-	80% { color: green; }
-	100% { color: mediumpurple; }
+
+
+html {
+  height: 100%;
+  background: #222222;
+  box-shadow: inset 0 0 400px #111111;
 }
 
-	body, p, header, footer {
-		font-family: 'Averia Serif Libre', cursive;
-	}
-	
-	#op a {
-	font-family: 'Averia Serif Libre', cursive;
-	
+body {
+   height: 100%;
+   overflow: hidden;
 }
 
-	h1 {
-		font-family: 'Bungee Shade', cursive;
-		cursor: pointer;
-		font-size: 2.0rem;
-	}
-	
-	#container {
+
+#container {
 		max-width: 100%;
-		
 	}
 	
 	#content {
 		margin: 0 auto;
 		text-align: center;
+		width: 100%;
+	}
+
+.drop {
+  background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6))  );
+  background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
+	width:1px;
+	height:89px;
+	position: absolute;
+	bottom:200px;
+	-webkit-animation: fall .63s linear infinite;
+  -moz-animation: fall .63s linear infinite;
+  z-index: -1;
+}
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+	to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+	to {margin-top:900px;}
+}
+
+@keyframes animatedBackground {
+	0% {color: red;}
+	10% {color: orangered;}
+	30% {color: yellow;}
+	40% {color: yellowgreen;}
+	50% {color: green;}
+	60% {color: teal;}
+	70% {color: blue;}
+	80% {color: blueviolet;}
+	90% {color: purple;}
+	100% {color: black;}
+}
+
+	body, p, header, footer {
+		font-family: 'Plaster', cursive;
+	}
+
+	header, footer {
+		height: 50px;
+	}
+	
+	#op a {
+		font-family: 'Averia Serif Libre', cursive;
 	}
 
 
 	.panel {
-		width: 100%;
+		width: 40%;
+		margin: 0 auto;
 		text-align: center;
 		padding: 10px;
-		color: black;
-		font-family: 'Averia Serif Libre', cursive;
-		
+		color: white;
+		font-family: 'Averia Serif Libre', cursive;	
+		display:none;
 	}
 
 	
 	.link {
 		text-decoration: none;
-		color: black;
+		color: white;
 	}
 
 #Ben, #Carter, #Olcott {
-	font-family: 'Bungee Shade', cursive;
+	font-family: 'Plaster', cursive;
 	cursor: pointer;
 	font-size: 2.25rem;
+	width: 40%;
+	color: white;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Plaster', cursive;
+	font-size: 2.0rem;
+	color: white;
+	cursor: pointer;
 }
 
 .hidden {
 	display:none;
+	opacity: 0;
 }
 
-.highlight {
-	animation: animatedBackground 20s linear infinite;
-	
-}
 .dropC {
-	font-size: 5.0rem;
+	font-size: 100px;
 }
 
 header, footer {
@@ -73,37 +115,267 @@ header, footer {
 }
 
 .category {
-	font-family: 'Bungee Shade', cursive;
+	font-family: 'Plaster', cursive;
 	font-size: 1.2rem;
 	cursor: pointer;
+	padding: 5px;
 }
 
 .category a:hover {
-	animation: animatedBackground 20s linear infinite;
 	cursor: pointer;
 }
 
 
 #homeNav {
-	width: 100%;
 	text-align: center;
+	float:left;
+	font-size: 2.0rem;
 }
 
 #homeNav a {
-	font-family: 'Bungee Shade', cursive;
+	font-family: 'Plaster', cursive;
 }
 
 .back {
-	font-size: 1.2rem;
 	text-align: center;
 }
 
 .prose {
 	padding-left: 10%;
 	padding-right: 10%;
+	text-align: left;
 }
 
-.verse {
+.poetry {
 	list-style: none;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: left;
 }
+
+.textP {
+	color: white;
+	background-color: #222222;
+	padding: 2%;
+	border: 1px solid white;
+}
+
+.textP p {
+	font-family: 'Averia Serif Libre', cursive;
+}
+
+.filler {
+	background-color: transparent;
+	height: 20px;
+}
+
+.paused {
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+#pause {
+	background-color: transparent;
+	border: none; 
+	font-size: 2.0rem;
+	cursor: pointer;
+	float: right;
+}
+
+#pause:before {
+	color: white;
+	content: "❚❚";
+}
+
+.go:before {
+	content: "►" !important;
+}
+
+
+
+.glitch {
+  color: white;
+  position: relative;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(35px, 9999px, 38px, 0);
+  }
+  5% {
+    clip: rect(59px, 9999px, 58px, 0);
+  }
+  10% {
+    clip: rect(74px, 9999px, 16px, 0);
+  }
+  15% {
+    clip: rect(49px, 9999px, 98px, 0);
+  }
+  20% {
+    clip: rect(39px, 9999px, 38px, 0);
+  }
+  25% {
+    clip: rect(32px, 9999px, 43px, 0);
+  }
+  30% {
+    clip: rect(100px, 9999px, 19px, 0);
+  }
+  35% {
+    clip: rect(97px, 9999px, 66px, 0);
+  }
+  40% {
+    clip: rect(85px, 9999px, 3px, 0);
+  }
+  45% {
+    clip: rect(15px, 9999px, 54px, 0);
+  }
+  50% {
+    clip: rect(35px, 9999px, 83px, 0);
+  }
+  55% {
+    clip: rect(75px, 9999px, 7px, 0);
+  }
+  60% {
+    clip: rect(51px, 9999px, 36px, 0);
+  }
+  65% {
+    clip: rect(63px, 9999px, 19px, 0);
+  }
+  70% {
+    clip: rect(33px, 9999px, 79px, 0);
+  }
+  75% {
+    clip: rect(63px, 9999px, 25px, 0);
+  }
+  80% {
+    clip: rect(92px, 9999px, 66px, 0);
+  }
+  85% {
+    clip: rect(78px, 9999px, 59px, 0);
+  }
+  90% {
+    clip: rect(66px, 9999px, 30px, 0);
+  }
+  95% {
+    clip: rect(40px, 9999px, 42px, 0);
+  }
+  100% {
+    clip: rect(36px, 9999px, 62px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(71px, 9999px, 14px, 0);
+  }
+  5% {
+    clip: rect(11px, 9999px, 24px, 0);
+  }
+  10% {
+    clip: rect(37px, 9999px, 31px, 0);
+  }
+  15% {
+    clip: rect(82px, 9999px, 71px, 0);
+  }
+  20% {
+    clip: rect(47px, 9999px, 91px, 0);
+  }
+  25% {
+    clip: rect(46px, 9999px, 38px, 0);
+  }
+  30% {
+    clip: rect(80px, 9999px, 3px, 0);
+  }
+  35% {
+    clip: rect(63px, 9999px, 30px, 0);
+  }
+  40% {
+    clip: rect(88px, 9999px, 64px, 0);
+  }
+  45% {
+    clip: rect(96px, 9999px, 49px, 0);
+  }
+  50% {
+    clip: rect(46px, 9999px, 61px, 0);
+  }
+  55% {
+    clip: rect(85px, 9999px, 84px, 0);
+  }
+  60% {
+    clip: rect(48px, 9999px, 53px, 0);
+  }
+  65% {
+    clip: rect(4px, 9999px, 87px, 0);
+  }
+  70% {
+    clip: rect(31px, 9999px, 33px, 0);
+  }
+  75% {
+    clip: rect(10px, 9999px, 18px, 0);
+  }
+  80% {
+    clip: rect(81px, 9999px, 8px, 0);
+  }
+  85% {
+    clip: rect(96px, 9999px, 24px, 0);
+  }
+  90% {
+    clip: rect(24px, 9999px, 42px, 0);
+  }
+  95% {
+    clip: rect(80px, 9999px, 30px, 0);
+  }
+  100% {
+    clip: rect(57px, 9999px, 99px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.on {
+	display: block;
+	transition: opacity 5s;
+	opacity: 1.0;
+	
+}
+
+
+@media (max-width: 580px) {
+	
+	.panel {
+		width: 80%;
+	}
+	
+	#Ben, #Carter, #Olcott {
+		width: 80%;
+	}
+	
+	.textP {
+		border: none;
+	}
+}
+
 
