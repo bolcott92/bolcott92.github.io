@@ -193,10 +193,10 @@ header, footer {
 }
 
 .icon {
-	width: 8%;
 	padding: 2%;
 	margin: 20 auto;
 	display: inline-block;
+	width: 25px;
 }
 
 
@@ -370,8 +370,8 @@ header, footer {
 
 
 .play-button {
-  height: 15px;
-  width: 15px;
+  height: 30px;
+  width: 30px;
   display: block;
   margin: 6px auto;
   overflow: hidden;
@@ -403,9 +403,9 @@ header, footer {
   background-color: transparent;
   width: 0;
   height: 0;
-  border-right: 15px solid transparent;
-  border-top: 7.5px solid white;
-  border-bottom: 7.5px solid white;
+  border-right: 30px solid transparent;
+  border-top: 15px solid white;
+  border-bottom: 15px solid white;
   -webkit-transition: -webkit-transform 0.25s ease;
   transition: -webkit-transform 0.25s ease;
   transition: transform 0.25s ease;
@@ -482,6 +482,10 @@ header, footer {
 	
 	.textP {
 		border: none;
+	}
+	
+	.icon {
+		width: 8%;
 	}
 }
 
