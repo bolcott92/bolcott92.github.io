@@ -139,6 +139,8 @@ header, footer {
 	padding-left: 10%;
 	padding-right: 10%;
 	text-align: left;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 .poetry {
@@ -146,9 +148,12 @@ header, footer {
 	padding-left: 10%;
 	padding-right: 10%;
 	text-align: left;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 .textP {
+	margin: 0 auto;
 	color: white;
 	background-color: #222222;
 	padding: 2%;
@@ -156,9 +161,7 @@ header, footer {
 	padding-right: 3%;
 	border: 1px solid white;
 	display: none;
-	
 }
-
 .textP p {
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: .9rem;
