@@ -64,7 +64,16 @@ function createRain() {
 $(".play-button").click(function() {
   $(this).toggleClass("paused");
 	$('.drop').toggleClass('pausedFX');
-	$('audio').trigger("pause");
+	
+	
+	if (this.hasClass('paused')){
+		
+		$('audio').trigger("pause");
+		
+	} else {
+		$('audio').trigger("play");
+	}
+	
 });
 	
 
