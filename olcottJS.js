@@ -7,11 +7,10 @@ $(document).ready(function(){
 	$('.nav').click(function(){
 		var targ = $(this).next('.panel');
 		if (targ.css('display') === "none") {
-			targ.fadeIn(1000);
+			targ.fadeIn(700);
 			} else if (targ.css('display') === "block") {
-				targ.fadeOut(1000);	   
-			};
-		$(this).find('.dropC').toggleClass('glitch')
+				targ.fadeOut(700);	   
+			}
 	});
 	
 	$('.prose').click(function(){
@@ -22,19 +21,21 @@ $(document).ready(function(){
 		$(this).find('.textP').toggle();
 	});
 	
-	$('a').mouseenter(function(){
+	$('a').each(function(){
 		var text = $(this).html();
-		console.log(text);
 		$(this).addClass('glitch').attr('data-text', text);
 	});
 	
-	$('a').mouseleave(function(){
-		$(this).removeClass('glitch');
+	$('h1').each(function(){
+		var text = $(this).html();
+		$(this).addClass('glitch').attr('data-text', text);
 	});
+	
+
 		
 	
 // number of drops created.
-var nbDrop = 858; 
+var nbDrop = 458; 
 
 // function to generate a random number range.
 function randRange( minNum, maxNum) {
@@ -45,8 +46,11 @@ function randRange( minNum, maxNum) {
 function createRain() {
 
 	for( i=1;i<nbDrop;i++) {
-	var dropLeft = randRange(0,1600),
-		dropTop = randRange(-1000,1400),
+	
+		var h = $(document).height(),
+		w = $(document).width(),
+		dropLeft = randRange(0,w),
+		dropTop = randRange(-1000,h),
 		rC = randRange(0,255),
 		gC = randRange(0,255),
 		bC = randRange(0,255);
