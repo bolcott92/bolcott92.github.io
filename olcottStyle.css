@@ -162,6 +162,7 @@ header, footer {
 	border: 1px solid white;
 	display: none;
 }
+
 .textP p {
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: .9rem;
@@ -187,15 +188,16 @@ header, footer {
 	font-family: 'Plaster', cursive;
 }
 
-#pause:before {
-	color: white;
-	content: "❚❚";
+.poetryContent, .fictionContent, .criticismContent, .designContent, .goB {
+	display: none;
 }
 
-.go:before {
-	content: "►" !important;
+.icon {
+	width: 8%;
+	padding: 2%;
+	margin: 20 auto;
+	display: inline-block;
 }
-
 
 
 .glitch {
@@ -368,8 +370,8 @@ header, footer {
 
 
 .play-button {
-  height: 30px;
-  width: 30px;
+  height: 15px;
+  width: 15px;
   display: block;
   margin: 6px auto;
   overflow: hidden;
@@ -401,9 +403,9 @@ header, footer {
   background-color: transparent;
   width: 0;
   height: 0;
-  border-right: 30px solid transparent;
-  border-top: 15px solid white;
-  border-bottom: 15px solid white;
+  border-right: 15px solid transparent;
+  border-top: 7.5px solid white;
+  border-bottom: 7.5px solid white;
   -webkit-transition: -webkit-transform 0.25s ease;
   transition: -webkit-transform 0.25s ease;
   transition: transform 0.25s ease;

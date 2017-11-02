@@ -7,18 +7,20 @@ $(document).ready(function(){
 	$('.nav').click(function(){
 		var targ = $(this).next('.panel');
 		if (targ.css('display') === "none") {
-			targ.fadeIn(700);
+			targ.fadeIn(500);
 			} else if (targ.css('display') === "block") {
-				targ.fadeOut(700);	   
+				targ.fadeOut(500);	   
 			}
 	});
 	
-	$('.prose').click(function(){
-		$(this).find('.textP').toggle();
-	});
-	
-	$('.poetry').click(function(){
-		$(this).find('.textP').toggle();
+	$('.prose, .poetry').click(function(){
+		
+		var targ = $(this).find('.textP');
+		if (targ.css('display') === "none") {
+			targ.fadeIn(500);
+			} else if (targ.css('display') === "block") {
+				targ.fadeOut(500);	   
+			}
 	});
 	
 	$('h1').each(function(){
@@ -77,32 +79,30 @@ $(".play-button").click(function() {
 });
 	
 	$('.pLink').click(function() {
-		$('.homeC').addClass('hidden');
-		$('.poetryContent, .goB').removeClass('hidden');
+		$('.homeC').css('display', 'none');
+		$('.poetryContent, .goB').fadeIn(500);
 	});
 	
 	$('.fLink').click(function() {
-		$('.homeC').addClass('hidden');
-		$('.fictionContent, .goB').removeClass('hidden');
+		$('.homeC').css('display', 'none');
+		$('.fictionContent, .goB').fadeIn(500);
 	});
 	
 	$('.cLink').click(function() {
-		$('.homeC').addClass('hidden');
-		$('.criticismContent, .goB').removeClass('hidden');
+		$('.homeC').css('display', 'none');
+		$('.criticismContent, .goB').fadeIn(500);
 	});
 	
 	$('.dLink').click(function() {
-		$('.homeC').addClass('hidden');
-		$('.designContent, .goB').removeClass('hidden');
+		$('.homeC').css('display', 'none');
+		$('.designContent, .goB').fadeIn(500);
 	});
 	
 	$('.goB').click(function() {
-		$("[class*='Content'], .goB").addClass('hidden');
-		$('.homeC').removeClass('hidden');
-		
+		$("[class*='Content'], .goB").css('display', 'none');
+		$('.homeC').fadeIn(500);
 	});
 	
-
 	
 	
 });
