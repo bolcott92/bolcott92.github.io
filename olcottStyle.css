@@ -106,6 +106,10 @@ h1 {
 .hidden {
 	display:none;
 	opacity: 0;
+	  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 
 .dropC {
@@ -162,6 +166,7 @@ header, footer {
 	padding-left: 5%;
 	border: 1px solid white;
 	display: none;
+	
 }
 
 .textP p {
@@ -174,7 +179,7 @@ header, footer {
 	height: 20px;
 }
 
-.paused {
+.pausedFX {
 	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
 }
@@ -366,6 +371,103 @@ header, footer {
 	opacity: 1.0;
 	
 }
+
+
+.play-button {
+  height: 30px;
+  width: 30px;
+  display: block;
+  margin: 6px auto;
+  overflow: hidden;
+  position: relative;
+	float: right;
+}
+.left {
+  height: 100%;
+  float: left;
+  background-color: #fff;
+  width: 36%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+.triangle-1 {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+.triangle-2 {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+.triangle-1,
+.triangle-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-right: 30px solid transparent;
+  border-top: 15px solid white;
+  border-bottom: 15px solid white;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+	z-index: 1;
+}
+.right {
+  height: 100%;
+  float: right;
+  width: 36%;
+  background-color: #fff;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.paused .left {
+  width: 0%;
+}
+.paused .right {
+  width: 0%;
+}
+.paused .triangle-1 {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.paused .triangle-2 {
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+.bk-btn {
+  height: 52px;
+  width: 52px;
+  background-color: transparent;
+  border-radius: 50%;
+	float: left;
+	
+}
+.bk-btn .bk-btn-triangle {
+  position: relative;
+  top: 13px;
+  left: 10.4px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-right: 13px solid white;
+	cursor: pointer;
+}
+.bk-btn .bk-btn-bar {
+  position: relative;
+  background-color: white;
+  height: 7.8px;
+  width: 13px;
+  top: -3.64px;
+  left: 22.88px;
+	cursor: pointer;
+}
+
 
 
 @media only screen and (max-width: 580px) {

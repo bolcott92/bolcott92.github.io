@@ -21,11 +21,6 @@ $(document).ready(function(){
 		$(this).find('.textP').toggle();
 	});
 	
-	$('a').each(function(){
-		var text = $(this).html();
-		$(this).addClass('glitch').attr('data-text', text);
-	});
-	
 	$('h1').each(function(){
 		var text = $(this).html();
 		$(this).addClass('glitch').attr('data-text', text);
@@ -66,11 +61,12 @@ function createRain() {
 
 	createRain();
 	
-	$('#pause').click(function() {
-		$('.drop').toggleClass('paused');
-		$(this).toggleClass('go');
+$(".play-button").click(function() {
+  $(this).toggleClass("paused");
+	$('.drop').toggleClass('pausedFX');
 });
 	
+
 	
 	
 });
