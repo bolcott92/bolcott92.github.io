@@ -16,10 +16,13 @@ $(document).ready(function(){
 	$('.prose, .poetry').click(function(){
 		
 		var targ = $(this).find('.textP');
+		var others = $(this).siblings('section');
 		if (targ.css('display') === "none") {
 			targ.fadeIn(500);
+			others.fadeOut(500);
 			} else if (targ.css('display') === "block") {
-				targ.fadeOut(500);	   
+				targ.fadeOut(500);
+				others.fadeIn(500);
 			}
 	});
 	
