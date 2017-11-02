@@ -76,6 +76,32 @@ $(".play-button").click(function() {
 	
 });
 	
+	$('.pLink').click(function() {
+		$('.homeC').addClass('hidden');
+		$('.poetryContent, .goB').removeClass('hidden');
+	});
+	
+	$('.fLink').click(function() {
+		$('.homeC').addClass('hidden');
+		$('.fictionContent, .goB').removeClass('hidden');
+	});
+	
+	$('.cLink').click(function() {
+		$('.homeC').addClass('hidden');
+		$('.criticismContent, .goB').removeClass('hidden');
+	});
+	
+	$('.dLink').click(function() {
+		$('.homeC').addClass('hidden');
+		$('.designContent, .goB').removeClass('hidden');
+	});
+	
+	$('.goB').click(function() {
+		$("[class*='Content'], .goB").addClass('hidden');
+		$('.homeC').removeClass('hidden');
+		
+	});
+	
 
 	
 	
