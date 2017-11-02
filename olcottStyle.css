@@ -122,24 +122,13 @@ header, footer {
 
 .category {
 	font-family: 'Averia Serif Libre', cursive;
-	font-size: .7rem;
+	font-size: .9rem;
 	cursor: pointer;
 	padding: 5px;
 }
 
 .category a:hover {
 	cursor: pointer;
-}
-
-
-#homeNav {
-	text-align: center;
-	float:left;
-	font-size: 2.0rem;
-}
-
-#homeNav a {
-	font-family: 'Plaster', cursive;
 }
 
 .back {
@@ -163,7 +152,8 @@ header, footer {
 	color: white;
 	background-color: #222222;
 	padding: 2%;
-	padding-left: 5%;
+	padding-left: 3%;
+	padding-right: 3%;
 	border: 1px solid white;
 	display: none;
 	
@@ -171,7 +161,9 @@ header, footer {
 
 .textP p {
 	font-family: 'Averia Serif Libre', cursive;
-	font-size: .7rem;
+	font-size: .9rem;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .filler {
