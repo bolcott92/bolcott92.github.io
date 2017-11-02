@@ -64,6 +64,7 @@ function createRain() {
 $(".play-button").click(function() {
   $(this).toggleClass("paused");
 	$('.drop').toggleClass('pausedFX');
+	$('audio').trigger("pause");
 });
 	
 
