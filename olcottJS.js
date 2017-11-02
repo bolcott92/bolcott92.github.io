@@ -66,7 +66,7 @@ $(".play-button").click(function() {
 	$('.drop').toggleClass('pausedFX');
 	
 	
-	if (this.hasClass('paused')){
+	if ($(this).hasClass('paused')){
 		
 		$('audio').trigger("pause");
 		
