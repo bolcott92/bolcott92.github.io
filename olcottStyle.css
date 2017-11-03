@@ -3,7 +3,7 @@
 
 html {
   max-height: 2000px;
-	height: 2000px;
+	height: 100%;
   	overflow-y: auto;
 	overflow-x: hidden;
 	background: #222222;
@@ -154,6 +154,7 @@ header, footer {
 
 .textP {
 	margin: 0 auto;
+	margin-bottom: 25px;
 	color: white;
 	background-color: #222222;
 	padding: 2%;
@@ -167,6 +168,10 @@ header, footer {
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: .9rem;
 	margin: 0 auto;
+}
+
+.textP a {
+	color: #e70aba;
 }
 
 .filler {
@@ -462,6 +467,44 @@ header, footer {
   top: -3.64px;
   left: 22.88px;
 	cursor: pointer;
+}
+
+.bk-btn-2 {
+  display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 15px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+	
+}
+.bk-btn-2 .bk-btn-triangle-2 {
+  position: relative;
+  top: 13px;
+  left: 10.4px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-right: 13px solid white;
+	cursor: pointer;
+	transform: rotate(90deg);
+}
+.bk-btn-2 .bk-btn-bar-2 {
+  position: relative;
+  background-color: white;
+  height: 7.8px;
+  width: 13px;
+  top: 7.64px;
+  left: 10.4px;
+	cursor: pointer;
+	transform: rotate(90deg);
 }
 
 

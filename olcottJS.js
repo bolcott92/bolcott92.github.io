@@ -29,16 +29,29 @@ $(document).ready(function(){
 	$('h1').each(function(){
 		var text = $(this).html();
 		$(this).addClass('glitch').attr('data-text', text);
-	});
+	});	
 	
-	var oflow = window.location.href;
 	
-	if (oflow.includes('#')) {
-		$('html').css('overflow-y', 'auto');
-	}	else {
-		$('html').css('overflow-y', 'hidden');
-	}
-		
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        $(".bk-btn-2").fadeIn(500);
+    } else {
+        $(".bk-btn-2").css('display',"none");
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+	
+	
+$('.bk-btn-2').click(function() {
+	topFunction();
+});
 	
 // number of drops created.
 var nbDrop = 458; 
@@ -47,6 +60,7 @@ var nbDrop = 458;
 function randRange( minNum, maxNum) {
   return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
 }
+	
 
 // function to generate drops
 function createRain() {
