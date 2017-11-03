@@ -27,7 +27,7 @@ $(document).ready(function(){
 	});
 	
 	
-	window.onscroll = function() {scrollFunction()};
+	window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -41,15 +41,16 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
     document.documentElement.scrollTop = 0; // For IE and Firefox
-}
-	
+}	
 	
 $('.bk-btn-2').click(function() {
 	topFunction();
 });
 	
+	
+	
 // number of drops created.
-var nbDrop = 458; 
+var nbDrop = 458;
 
 // function to generate a random number range.
 function randRange( minNum, maxNum) {
@@ -85,16 +86,23 @@ $(".play-button").click(function() {
   $(this).toggleClass("paused");
 	$('.drop').toggleClass('pausedFX');
 	
+});
 	
-	if ($(this).hasClass('paused')){
+	
+	$('.speaker').click(function(e) {
+  e.preventDefault();
+
+	$(this).toggleClass('mute');
 		
-		$('audio').trigger("pause");
+		if ($(this).hasClass('mute')){
+		
+		$('audio').muted = true;
 		
 	} else {
-		$('audio').trigger("play");
+		$('audio').muted = false;
 	}
-	
 });
+
 	
 	$('.pLink').click(function() {
 		$('.homeC').css('display', 'none');
