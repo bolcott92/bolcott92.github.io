@@ -89,17 +89,17 @@ $(".play-button").click(function() {
 });
 	
 	
-	$('.speaker').click(function() {
+	$('.speaker').click(function(e) {
+  e.preventDefault();
 
 	$(this).toggleClass('mute');
 		
-	if ($(this).hasClass('mute')){
-		console.log('here');
-		$('audio').muted = true;
+		if ($(this).hasClass('mute')){
+		
+		$('audio').trigger("pause");
 		
 	} else {
-		$('audio').muted = false;
-		console.log('here2');
+		$('audio').trigger("mute");
 	}
 });
 
