@@ -26,11 +26,6 @@ $(document).ready(function(){
 			}
 	});
 	
-	$('h1').each(function(){
-		var text = $(this).html();
-		$(this).addClass('glitch').attr('data-text', text);
-	});	
-	
 	
 	window.onscroll = function() {scrollFunction()};
 
