@@ -94,11 +94,12 @@ $(".play-button").click(function() {
 	$(this).toggleClass('mute');
 		
 	if ($(this).hasClass('mute')){
-		
+		console.log('here')
 		$('audio').muted = true;
 		
 	} else {
 		$('audio').muted = false;
+		console.log('here2')
 	}
 });
 
