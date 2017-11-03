@@ -13,10 +13,10 @@ $(document).ready(function(){
 			}
 	});
 	
-	$('.prose, .poetry').click(function(){
+	$('.prose h1, .poetry h1').click(function(){
 		
-		var targ = $(this).find('.textP');
-		var others = $(this).siblings('section');
+		var targ = $(this).siblings('.textP');
+		var others = $(this).parent().siblings('section');
 		if (targ.css('display') === "none") {
 			targ.fadeIn(500);
 			others.fadeOut(500);
@@ -31,7 +31,13 @@ $(document).ready(function(){
 		$(this).addClass('glitch').attr('data-text', text);
 	});
 	
-
+	var oflow = window.location.href;
+	
+	if (oflow.includes('#')) {
+		$('html').css('overflow-y', 'auto');
+	}	else {
+		$('html').css('overflow-y', 'hidden');
+	}
 		
 	
 // number of drops created.
