@@ -99,7 +99,7 @@ $(".play-button").click(function() {
 		$('audio').trigger("pause");
 		
 	} else {
-		$('audio').trigger("mute");
+		$('audio').trigger("play");
 	}
 });
 
