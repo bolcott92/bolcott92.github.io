@@ -90,11 +90,10 @@ $(".play-button").click(function() {
 	
 	
 	$('.speaker').click(function(e) {
-  e.preventDefault();
 
 	$(this).toggleClass('mute');
 		
-		if ($(this).hasClass('mute')){
+	if ($(this).hasClass('mute')){
 		
 		$('audio').muted = true;
 		
