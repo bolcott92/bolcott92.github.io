@@ -49,6 +49,8 @@ $('.bk-btn-2').click(function() {
 	
 	
 	
+	
+	
 // number of drops created.
 var nbDrop = 458;
 
@@ -75,9 +77,12 @@ function createRain() {
 	$('.rain').append('<div class="drop" id="drop'+i+'"></div>');
 	$('#drop'+i).css('left',dropLeft);
 	$('#drop'+i).css('top',dropTop);
+	
 	$('#drop'+i).css('background', "-webkit-gradient(linear,0% 0%,0% 100%, from(rgba("+rC+","+gC+","+bC+",1) ), to(rgba(255,255,255,0.6)");	
+	
+	$('#drop'+i).css('background',"-moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba("+rC+","+gC+","+bC+",1) 100%");
+	
 	}
-
 }
 
 	createRain();
