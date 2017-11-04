@@ -2,9 +2,10 @@
 	
 	
 $(document).ready(function(){
-				  
+		"use strict";		  
 				  
 	$('.nav').click(function(){
+		
 		var targ = $(this).next('.panel');
 		if (targ.css('display') === "none") {
 			targ.fadeIn(500);
@@ -62,7 +63,8 @@ function randRange( minNum, maxNum) {
 
 // function to generate drops
 function createRain() {
-
+	var i = 1;
+	
 	for( i=1;i<nbDrop;i++) {
 	
 		var h = $(document).height(),
