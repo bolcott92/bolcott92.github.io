@@ -95,6 +95,7 @@ $(".play-button").click(function() {
 	
 });
 	
+	/*
 	
 	$('.speaker').click(function(e) {
   e.preventDefault();
@@ -109,6 +110,7 @@ $(".play-button").click(function() {
 		$('audio').trigger("play");
 	}
 });
+*/
 
 	
 	$('.pLink').click(function() {
