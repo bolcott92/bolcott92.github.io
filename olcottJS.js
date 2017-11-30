@@ -6,6 +6,7 @@ $(document).ready(function(){
 				  
 	$('.nav').click(function(){
 		
+		
 		var targ = $(this).next('.panel');
 		if (targ.css('display') === "none") {
 			targ.fadeIn(500);
