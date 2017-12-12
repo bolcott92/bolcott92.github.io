@@ -114,6 +114,11 @@ $(".play-button").click(function() {
 */
 
 	
+	$('.oLink').click(function() {
+		$('.homeC').css('display', 'none');
+		$('.occasionalContent, .goB').fadeIn(500);
+	});
+	
 	$('.pLink').click(function() {
 		$('.homeC').css('display', 'none');
 		$('.poetryContent, .goB').fadeIn(500);

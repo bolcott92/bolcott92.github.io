@@ -200,7 +200,7 @@ header, footer {
 	font-family: 'Plaster', cursive;
 }
 
-.poetryContent, .fictionContent, .criticismContent, .designContent, .goB {
+.poetryContent, .fictionContent, .criticismContent, .designContent, .goB, .occasionalContent {
 	display: none;
 }
 
