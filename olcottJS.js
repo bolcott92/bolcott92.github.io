@@ -139,6 +139,11 @@ $(".play-button").click(function() {
 		$('.designContent, .goB').fadeIn(500);
 	});
 	
+	$('.tLink').click(function() {
+		$('.homeC').css('display', 'none');
+		$('.tvfilmContent, .goB').fadeIn(500);
+	});
+	
 	$('.goB').click(function() {
 		$("[class*='Content'], .goB").css('display', 'none');
 		$('.homeC').fadeIn(500);
