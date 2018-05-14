@@ -15,7 +15,7 @@ $(document).ready(function(){
 			}
 	});
 	
-	$('.highlight').append("<i class='arrow right'></i>");
+	$('.highlight').append("<i class='arrow right2'></i>");
 	
 	$('.prose h1, .poetry h1').click(function(){
 		
@@ -23,12 +23,12 @@ $(document).ready(function(){
 		var others = $(this).parent().siblings('section');
 		if (targ.css('display') === "none") {
 			targ.fadeIn(500);
-			$(this).find('.arrow').removeClass('right').addClass('down');
+			$(this).find('.arrow').removeClass('right2').addClass('down2');
 			others.fadeOut(500);
 			} else if (targ.css('display') === "block") {
 				targ.fadeOut(500);
 				others.fadeIn(500);
-				$(this).find('.arrow').removeClass('down').addClass('right');
+				$(this).find('.arrow').removeClass('down2').addClass('right2');
 			}
 	});
 	

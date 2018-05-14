@@ -218,22 +218,22 @@ i {
     padding: 3px;
 }
 
-.right {
+.right2 {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
-.left {
+.left2 {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
 
-.up {
+.up2 {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
 
-.down {
+.down2 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
