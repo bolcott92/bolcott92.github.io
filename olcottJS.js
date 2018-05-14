@@ -15,16 +15,20 @@ $(document).ready(function(){
 			}
 	});
 	
+	$('.highlight').append("<i class='arrow right'></i>");
+	
 	$('.prose h1, .poetry h1').click(function(){
 		
 		var targ = $(this).siblings('.textP');
 		var others = $(this).parent().siblings('section');
 		if (targ.css('display') === "none") {
 			targ.fadeIn(500);
+			$(this).find('.arrow').removeClass('right').addClass('down');
 			others.fadeOut(500);
 			} else if (targ.css('display') === "block") {
 				targ.fadeOut(500);
 				others.fadeIn(500);
+				$(this).find('.arrow').removeClass('down').addClass('right');
 			}
 	});
 	
@@ -147,7 +151,12 @@ $(".play-button").click(function() {
 	$('.goB').click(function() {
 		$("[class*='Content'], .goB").css('display', 'none');
 		$('.homeC').fadeIn(500);
+		
 	});
+	
+	
+	
+	
 	
 	
 	
