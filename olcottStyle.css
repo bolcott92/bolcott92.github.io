@@ -212,10 +212,11 @@ header, footer {
 }
 
 i {
-    border: solid black;
+    border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 4px;
+	margin-left: 10px;
 }
 
 .right2 {
@@ -236,6 +237,7 @@ i {
 .down2 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+	margin-bottom: 4px;
 }
 
 /*
