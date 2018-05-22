@@ -201,7 +201,7 @@ header, footer {
 	font-family: 'Plaster', cursive;
 }
 
-.poetryContent, .fictionContent, .criticismContent, .designContent, .goB, .occasionalContent, .tvfilmContent {
+.poetryContent, .fictionContent, .criticismContent, .designContent, .goB, .occasionalContent, .tvfilmContent, .bioContent {
 	display: none;
 }
 
