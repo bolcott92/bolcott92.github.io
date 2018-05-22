@@ -118,10 +118,11 @@ $(".play-button").click(function() {
 */
 
 	
-	$('.oLink').click(function() {
+	$('.bLink').click(function() {
 		$('.homeC').css('display', 'none');
-		$('.occasionalContent, .goB').fadeIn(500);
+		$('.bioContent, .goB').fadeIn(500);
 	});
+	
 	
 	$('.pLink').click(function() {
 		$('.homeC').css('display', 'none');
